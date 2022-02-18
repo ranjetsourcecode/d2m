@@ -1,0 +1,972 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+body{
+    font-size: 15px;
+}
+html, body {
+  overflow-x: hidden !important;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+    display: block;
+    /* margin: auto; */
+    width: auto;
+    height: auto;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    height: 70px;
+    padding: 12px;
+    padding-left: 17px;
+    outline: 0 !important;
+    border: 0;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+a,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+a,input,button{
+    outline: 0;
+}
+input{
+    height: 17px;
+    padding-left: 2px;
+    font: 14px 'Eurostile',sans-serif;
+}
+select{
+    display: inline-block;
+}
+h1{
+    font-size: 40px;
+    color: #c8ae73;
+    margin: 15px 0px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    color: #000;
+    margin: 10px 0;
+}
+h3{
+    font-size: 18px;
+    color: #71518a;
+    margin: 10px 0;
+}
+h4{
+    font-size: 23px;
+    color: #273F7F;
+    margin: 10px 0;
+    font-weight: normal;
+}
+h5{
+    font-size: 14px;
+    color: #273F7F;
+    margin: 10px 0;
+}
+p{
+    margin: 0;
+    font: 15px 'Source Sans Pro',  sans-serif;
+    text-align: justify;
+    line-height: 25px;
+    /* margin-bottom: 15px; */
+    color: #585858;
+    font-weight: 300;
+}
+h2,h3,h4,h5{
+    font-family: 'Source Sans Pro',   sans-serif;
+    color: #161616;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Floats free left and right with !impoprtant case
+ */
+
+.fl-l{
+    float: left;
+}
+.fl-r{
+    float: right;
+}
+
+.fl-ll{
+    float: left !important;
+}
+.fl-rr{
+    float: right !important;
+}
+.full-width{
+    width: 100% !important;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-150{
+    margin-top: 150px;
+}
+.mt-200{
+    margin-top: 200px;
+}
+.mt-250{
+    margin-top: 250px;
+}
+.mt-300{
+    margin-top: 300px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mb-150{
+    margin-bottom: 150px;
+}
+.mb-200{
+    margin-bottom: 200px;
+}
+.mb-250{
+    margin-bottom: 250px;
+}
+.mb-300{
+    margin-bottom: 300px;
+}
+.mb-500{
+    margin-bottom: 500px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-15{
+    padding-left: 30px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.ml-25{
+    margin-left: 25px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.ml-35{
+    margin-left: 35px;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.ml-45{
+    margin-left: 45px;
+}
+.ml-50{
+    margin-left: 50px;
+}
+.mr-15{
+    margin-right: 15px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mr-25{
+    margin-right: 25px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.mr-35{
+    margin-right: 35px;
+}
+.mr-40{
+    margin-right: 40px;
+}
+.mr-45{
+    margin-right: 45px;
+}
+.mr-50{
+    margin-right: 50px;
+}
+.w-50{
+    width: 50px;
+}
+.w-100{
+    width: 100px;
+}
+.w-150{
+    width: 150px;
+}
+.w-200{
+    width: 200px;
+}
+.w-250{
+    width: 200px;
+}
+.w-290{
+    width: 290px !important;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+/*  
+ * Name              : Custom LP Codes
+ * Version           : 1.0.0
+ * Style Type        : Handly Coded from Scratch
+ * Semantic Followed : Intelligent Selectors & Robdodson's Blog
+ */
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon/icomoon.eot');
+    src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    position: relative;
+    margin: 0;
+    font: 14px 'Source Sans Pro', sans-serif;
+    background: #fff;
+    margin: 0;
+}
+button,a{
+    outline: 0 !important;
+}
+.wrapper{
+    width: 100%;
+}
+.container-fluid{
+    width: 100%;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    /* margin: 0 auto; */
+}
+
+/* loading css codes */
+.loading{
+      display: none;
+}
+.loading{
+    position: relative;
+    left: 109%;
+    top: 9px;
+    z-index: 9999;
+    width: 22px;
+    height: 22px;
+    -webkit-animation: spinner 400ms linear infinite;
+    animation: spinner 600ms linear infinite;
+}
+.loading:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@-webkit-keyframes spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    /* extra submit button loadin positioning*/
+    .btn-wrap{
+        position: relative;
+        display: inline-block;
+    }
+    .btn-wrap .loading{
+        position: absolute;
+        left: 114%;
+        top: 7px;
+    }
+    /* extra submit button loadin positioning*/
+/* end of loading css codes */
+form label.error{
+    width: 100% !important;
+    padding: 10px 0;
+    color: red;
+    clear: both;
+    margin: 0;
+    display: none;
+    font-weight: normal;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    letter-spacing: 0px;
+    color: #9c9c9c;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    letter-spacing: 0px;
+    color: #9c9c9c;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    letter-spacing: 0px;
+    color: #9c9c9c;
+}
+:-moz-placeholder { /* Firefox 18- */
+    letter-spacing: 0px;
+    color: #9c9c9c;
+}
+section{
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+}
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+
+/* LP Codes */
+section.grey{
+    background: #f9f9f9;
+}
+h3{
+    font-weight: 300;
+    font-size: 21px;
+    margin: 15px;
+}
+h3 span{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #383838 !important;
+}
+.row.no-gutter{
+    margin-left: 0px;
+    margin-right: 0;
+}
+.row.no-gutter [class*="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* sticky form code */
+.stickyForm {
+    position: fixed;
+    top: 5%;
+    width: 310px;
+    right: -310px;
+    text-align: center;
+    padding: 17px;
+    background: rgba(84, 84, 84, 0.81);
+    border-radius: 11px 0px  0 11px;
+    -webkit-transition: .35s ease-in-out;
+    -o-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    z-index: 9999;
+}
+.stickyForm.active {
+    right: 0px;
+}
+.stickyForm .btn {
+    background: #e20809;
+    padding: 10px 30px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: -127px;
+    color: #fff;
+    height: 40px;
+    border-radius: 7px 7px  0 0;
+    font-size: 15px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    border: 0;
+    perspective: 100px;
+    outline: 0 !important;
+}
+
+input#phone {
+    /* padding-left: 50px !important; */
+}
+body .stickyForm *{
+    color: #fff;
+}
+body .stickyForm label{
+    width: 100% !important;
+}
+body .stickyForm input[type="text"], body .stickyForm input[type="email"], body .stickyForm textarea, body .stickyForm .intl-tel-input {
+    width: 100% !important;
+    border: 0;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 13px;
+}
+.stickyForm [type="submit"] {
+    background: #545454d9;
+    color: white;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: 1px solid #616161;
+}
+body .stickyForm ._checkbox{
+    margin-bottom: 10px;
+}
+body .stickyForm ._checkbox .text{
+    text-align: left;
+    margin-bottom: 10px;
+}
+body .stickyForm ._checkbox label{
+    width: 50% !important;
+    float: left;
+    padding-right: 5px;
+}
+body .stickyForm  ._checkbox span{
+    padding-left: 4px;
+    font-size: 13px;
+    float: left;
+}
+.stickyForm, .stickyForm.active .btn{
+    background: rgba(35, 35, 35, 0.77);
+}
+.stickyForm ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    letter-spacing: 0px;
+    color: #ccc;
+}
+.stickyForm :::-moz-placeholder { /* Firefox 19+ */
+    letter-spacing: 0px;
+    color: #ccc;
+}
+.stickyForm ::-ms-input-placeholder { /* IE 10+ */
+    letter-spacing: 0px;
+    color: #ccc;
+}
+.stickyForm :-moz-placeholder { /* Firefox 18- */
+    letter-spacing: 0px;
+    color: #ccc;
+}
+body .stickyForm select{
+    width: 100%;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+}
+body .stickyForm .btn-group{
+    margin-top: 20px;
+}
+body .stickyForm .error{
+    margin-bottom: 0 !important;
+}
+body .stickyForm label.error{
+    padding: 7px 0;
+}
+body .stickyForm [type="submit"]{
+    background: #ff3c50 !important;
+    color: #fff;
+    height: 40px !important;
+    padding: 0px 30px !important;
+    /* box-shadow: 0 0 8px 3px rgba(99, 99, 99, 0.32); */
+}
+/* end of sticky form code */
+
+.form-section form{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.stickyForm .loading{
+    top: -29px;
+}
+
+/*  blink animation codes */
+.animated {
+    animation-duration: 0.85s;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+._animated {
+    animation-duration: 0.85s;
+    animation-fill-mode: both;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#slider{
+    position: relative;
+}
+/*  end of blink animation codes */
+
+/* LP codes continues here */
+.header-top{display: flex;/* width: 100%; */margin: 40px 30px;flex-wrap: wrap;}
+.header-top #brand{/* float: left; */flex-basis: 50%;}
+.header-top #brand img{width: 180px;}
+.header-top .contact-now{flex-basis: 50%;display: flex;align-items: center;justify-content: flex-end;/* background-color: #e8ffeb; */}
+.header-top .contact-now p{color: black;font-size: 20px;font-weight: 500;margin-right: 25px;}
+.header-top .contact-now a{display: flex;align-items: center;color: #41ad4e;font-weight: 600;margin-right: 30px;padding: 7px 20px;font-size: 17px;background-color: #e8ffeb;border-radius: 5px;height: 50px;text-decoration: none;}
+.header-top .contact-now img{width: 27px;margin-right: 8px;}
+.content .row{display: flex;align-items: flex-end;}
+.content{margin-top: 77px;}
+.content h3{color: #7c7c7c;font-size: 45px;margin-left: 0px;}
+.content h3 span{font-size: 50px;color: #41AD4D !important;font-weight: 600;}
+.sub-title{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 14px;
+}
+.download-app{/* display: flex; */}
+.download-app a{
+    width: 50%;
+}
+.download-app a img{
+    width: 41%;
+    float: left;
+    margin-right: 6px;
+    height: 70px;
+}
+.header-top .contact-now img.email-img{
+    width: 39px;
+}
+
+/* mobile reponsive */
+@media only screen and (max-width: 1200px){
+    .form-section label{
+        width: 15% !important;
+    }
+}
+
+@media only screen and (max-width: 996px){
+    .container{
+        width: 95%;
+    }
+    .form-section label{
+        width: 15% !important;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hidden-xs{
+        display: none;
+    }
+    .visible-xs{
+        display: block;
+    }
+    .hidden-lg{
+        /* display: none; */
+    }
+    /* custom codes */
+    .form-section label{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .form-section label input, .form-section label select{
+        margin-bottom: 10px;
+        height: 40px !important;
+    }
+    .form-section{
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
+    .form-section .btn-group{
+        float: none;
+        margin-top: 5px;
+    }
+    /* custom codes here */
+    .header-top{
+        margin: 25px 5px;
+    }
+    .header-top #brand img{
+        width: 100px;
+        margin: auto;
+    }
+    .header-top .contact-now{
+        display: block;
+        flex-basis: 100%;
+    }
+    .header-top #brand{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .header-top .contact-now p{
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 20px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .content .row{
+        display: block;
+    }
+    .content h3{
+        font-size: 33px;
+        margin-bottom: 60px;
+    }
+    .content h3 span{
+        font-size: 33px;
+        margin-bottom: 0px;
+    }
+    .content{
+        margin-top: 50px;
+    }
+    .sub-title{
+        margin-bottom: 0px;
+    }
+    .content video{}
+    .download-app{
+        margin-bottom: 110px;
+    }
+    .header-top .contact-now a{
+        width: 49%;
+        float: left;
+        margin-right: 3px;
+        font-size: 15px;
+        padding: 7px 15px;
+    }
+    .header-top .contact-now img{
+        width: 16px;
+    }
+    .header-top .contact-now img.email-img{
+        width: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+    .fluid-wrapper .header{
+        padding: 10px 0px;
+    }
+}
